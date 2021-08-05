@@ -1,0 +1,59 @@
+<body class="bdy">
+    <section>
+        <div class="row mx-0 mobilepadding">
+            <div class="lmain">
+                <div id="lside" class="lside col-12 col-lg-12 col-xl-10">
+                    <div>
+                        <h2 class="wlcom">Welcome Back</h2>
+                    </div>
+                    <form method="POST" action="/login">
+                        <div class="iputDiv">
+                            <div class="emilInpt">
+                                <input
+                                    name="email"
+                                    class="inpt"
+                                    id="emailText"
+                                    onkeyup="emailValidation()"
+                                    type=""
+                                    placeholder="Your Email"
+                                    oninput="this.value=this.value.replace(/\\\s/g, '')"
+                                /><br />
+                            </div>
+                            <div class="spanDiv">
+                                <span class="valid" id="emailSpan"></span>
+                            </div>
+                            <div class="passInpt">
+                                <input
+                                    name="password"
+                                    class="inpt"
+                                    type="password"
+                                    id="passwordText"
+                                    onkeyup="CheckPassword()"
+                                    placeholder="Your Password"
+                                />
+                            </div>
+                            <div class="spanDiv">
+                                <span class="valid passSpan" id="passwordSpan">{{error}}</span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button class="btn">Log In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="rmain">
+                <div class="rside col-12 col-lg-12 col-xl-10">
+                    <div class="imgdiv col-12 col-lg-12 col-xl-10">
+                        <div class="textt">
+                            <h3>New Update Available</h3>
+                            <p>We have added some new<br />awesome features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
