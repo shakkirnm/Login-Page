@@ -1,8 +1,8 @@
 <body class="bdy">
     <section>
-        <div class="row mx-0 mobilepadding">
-            <div class="lmain">
-                <div id="lside" class="lside col-12 col-lg-12 col-xl-10">
+        <div class="row mx-0 mobilepadding ">
+            <div class="lmain ">
+                <div id="lside justify-content-center" class="lside col-12 col-lg-12 col-xl-10">
                     <div>
                         <h2 class="wlcom">Welcome Back</h2>
                     </div>
@@ -16,7 +16,7 @@
                                     onkeyup="emailValidation()"
                                     type=""
                                     placeholder="Your Email"
-                                    oninput="this.value=this.value.replace(/\\\s/g, '')"
+                                    oninput="this.value=this.value.replace(/\s/g, '')"
                                 /><br />
                             </div>
                             <div class="spanDiv">
@@ -30,6 +30,7 @@
                                     id="passwordText"
                                     onkeyup="CheckPassword()"
                                     placeholder="Your Password"
+                                    oninput="this.value=this.value.replace(/\s/g, '')"
                                 />
                             </div>
                             <div class="spanDiv">

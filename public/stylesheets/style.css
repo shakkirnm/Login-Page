@@ -137,38 +137,41 @@
 
 }
 
+@media screen and (min-width: 0px) and (max-width: 849px) {
+  .rmain { 
+    display: none;
+  } 
+}
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+  .rmain { display: block; } 
+}
 
-@media screen and (min-width: 700px) and (max-width: 1200px) {
-  .rmain { display: block; }  /* show it on small screens */
-}
-@media screen and (min-width: 0px) and (max-width: 800px) {
-  .rmain { display: none; }   /* hide it elsewhere */
-}
-@media screen and (min-width: 0px) and (max-width: 800px) {
+@media screen and (min-width: 0px) and (max-width: 850px) {
   .lmain {
         min-height: 100vh;
         display: flex;
         width: 100%;
+        margin-top: -4rem;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         float: none;
         padding:50px; 
 
-   }   /* hide it elsewhere */
+   }   
 }
-@media screen and (min-width:800px ) and (max-width: 1200px) {
+@media screen and (min-width:850px ) and (max-width: 1200px) {
   
   .lmain {
       padding-left: 40px;
-   }   /* hide it elsewhere */
+   }  
 }
-@media screen and (min-width:800px ) and (max-width: 1200px) {
+@media screen and (min-width:850px ) and (max-width: 1200px) {
   
   .rmain {
       padding-right: 40px;
-   }   /* hide it elsewhere */
+   }   
 }
-@media screen and (min-width: 0px) and (max-width: 800px) {
+@media screen and (min-width: 0px) and (max-width: 850px) {
   #lside { 
       align-items: center;
       text-align: center;
@@ -183,8 +186,13 @@
       height: 35rem;
    }
 }
-@media screen and (min-width: 0px) and (max-width: 800px) {
-  .inpt { width: 100%; }   /* hide it elsewhere */
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .inpt { 
+    width: 100%;
+  }   
 }
 
 
+@media screen and (min-width: 0px) and (max-width: 850px) {
+  .rside { display: none; }   
+}
